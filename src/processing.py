@@ -13,7 +13,7 @@ def filter_by_state(dictionary_inform: List[Dict[str, Any]], state: str = "EXECU
     return list_state
 
 
-def sort_by_date(dictionary_inform: list[dict[str, Any]], reverse=True) -> list[dict[str, Any]]:
+def sort_by_date(dictionary_inform: list[dict[str, Any]], reverse: bool = True) -> list[dict[str, Any]]:
     """Функция, которая сортирует список по дате и возвращает новый список"""
     sorted_list = sorted(dictionary_inform, key=lambda x: x["date"], reverse=True)
     return sorted_list
