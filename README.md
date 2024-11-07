@@ -15,7 +15,7 @@
 с помощью pytest
 ## Инструкция по установке
 1.Чтобы скачать репозиторий:
-* git clone https://github.com//project-x.git
+* git clone https://github.com/KonstantinShirshov/Project1
 
 2.Установить не обходимые зависимости
 * pip install -r requirements.txt
