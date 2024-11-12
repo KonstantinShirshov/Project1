@@ -1,6 +1,6 @@
 from src.masks import get_mask_account, get_mask_card_number
 
-print(get_mask_card_number("7642211567767987"))
+print(get_mask_card_number("3455674910673489"))
 print(get_mask_account("43434434343454548779"))
 
 from src.processing import filter_by_state, sort_by_date

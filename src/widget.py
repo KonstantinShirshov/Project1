@@ -21,3 +21,5 @@ def get_date(date_info: str) -> str:
 
 
 print(get_date("2024-03-11T02:26:18.671407"))
+print(mask_account_card("Visa Platinum 7000792289606361"))
+print(mask_account_card("Счет 35383033474447895560"))
