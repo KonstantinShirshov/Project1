@@ -28,7 +28,7 @@ def transaction_descriptions(transactions: list[dict]) -> Iterator[str]:
 
 
 def card_number_generator(start: int, end: int) -> Iterator[str]:
-    """Функция, которая возвращает номера банковских карт
+    """Функция, которая генерирует номера банковских карт
     в формате XXXX XXXX XXXX XXXX, где X — цифра номера карты."""
     if len(str(start)) > 16 or len(str(end)) > 16 or start > end or isinstance(start, str) or isinstance(end, str):
         yield ""
