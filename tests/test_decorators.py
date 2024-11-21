@@ -1,5 +1,5 @@
-from typing import Union
 from datetime import datetime
+from typing import Union
 
 from src.decorators import log
 
@@ -13,7 +13,7 @@ def test_log(capsys) -> None:
 
     func_for_decorators(1, 2)
     captured = capsys.readouterr()
-    assert captured.out == f"Начало работы: {datetime.now().replace(minute=0, second=0, microsecond=0)}\nfunc_for_decorators, ok\nКонец работы: {datetime.now().replace(minute=0, second=0, microsecond=0)}\n"
+    assert (captured.out == f"Начало работы: {datetime.now().replace(minute=0, second=0, microsecond=0)}\nfunc_for_decorators, ok\nКонец работы: {datetime.now().replace(minute=0, second=0, microsecond=0)}\n")
 
     func_for_decorators("1", 2)
     captured = capsys.readouterr()
