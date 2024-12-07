@@ -29,7 +29,7 @@ def transaction_amount(transact: list, currency: str = "RUB") -> Any:
 
 if __name__ == '__main__':
     path = '../data/operations.json'
-    # print(get_operations_data(path))
+    print(get_operations_data(path))
     data = get_operations_data(path)
-    transaction_amount(data[1], "RUB")
+    transaction_amount(data[0], "RUB")
 
