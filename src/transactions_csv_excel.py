@@ -38,7 +38,7 @@ def reading_xlsx_file(file_path: str) -> list:
         return []
 
 if __name__ == "__main__":
-    path = "../data/transacts.csv"
+    path = "../data/transactions.csv"
     print(reading_csv_file(path))
 #     file_path = "../data/transactions_excel.xlsx"
 #     print(reading_xlsx_file(file_path))
