@@ -2,13 +2,13 @@ import json
 import logging
 from json import JSONDecodeError
 from typing import Any
-from src.external_api import currency_conversion
 
+from src.external_api import currency_conversion
 
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)s: %(filename)s: %(funcName)s %(lineno)s: %(asctime)s - %(message)s",
-    filename="../logs/utils.log",
+    filename="logs/utils.log",
     encoding="utf-8",
     filemode="w",
 )
@@ -46,8 +46,8 @@ def transaction_amount(transact: list, currency: str = "RUB") -> Any:
     return amount
 
 
-if __name__ == "__main__":
-    path = "../data/operations.json"
-    # print(get_operations_data(path))
-    data = get_operations_data(path)
-    transaction_amount(data[0], "RUB")
+# if __name__ == "__main__":
+#     path = "../data/operations.json"
+#     # print(get_operations_data(path))
+#     data = get_operations_data(path)
+#     transaction_amount(data[0], "RUB")
