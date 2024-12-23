@@ -1,6 +1,7 @@
 import csv
 import pandas as pd
 
+
 def reading_csv_file(path: str) -> list:
     """Функция, которая принимает на вход путь до CSV-файла
     и возвращает список словарей с данными о финансовых транзакциях"""
