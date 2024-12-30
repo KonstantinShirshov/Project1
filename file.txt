@@ -6,3 +6,11 @@ func_for_decorators, ok
 func_for_decorators, ok 
 func_for_decorators, ok 
 func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
+func_for_decorators, ok 
