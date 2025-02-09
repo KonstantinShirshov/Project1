@@ -31,13 +31,14 @@ def status_type_option(lst: list) -> list:
     status_list = ["EXECUTED", "CANCELED", "PENDING"]
     print('''Программа: Введите статус, по которому необходимо выполнить фильтрацию. 
 Доступные для фильтровки статусы: EXECUTED, CANCELED, PENDING''')
-    status_answer = input('Пользователь: ')
-    while status_answer.upper() not in status_list:
+    status_answer = input('Пользователь: ').upper()
+    while status_answer not in status_list:
         print(f'Программа: Статус операции "{status_answer.upper()}" недоступен.')
         print('''Программа: Введите статус, по которому необходимо выполнить фильтрацию. 
 Доступные для фильтровки статусы: EXECUTED, CANCELED, PENDING''')
-    lst = filter_by_state(lst, status_answer)
-    print(f'Программа: Операции отфильтрованы по статусу "{status_answer}".')
+        status_answer = input('Пользователь: ').upper()
+    lst = filter_by_state(lst, status_answer.upper())
+    print(f'Программа: Операции отфильтрованы по статусу "{status_answer.upper()}".')
     return lst
 
 
