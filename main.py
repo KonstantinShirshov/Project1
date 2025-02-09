@@ -100,15 +100,15 @@ def printing_results(lst: list) -> None:
             print('')
 
 
-def main() -> None:
-    """Функция, которая отвечает за основную логику проекта
-        и связывает функциональности между собой."""
-    lst, file_answer = file_type_option()
-    lst = status_type_option(lst)
-    lst = sort_by_date_option(lst)
-    lst = filter_rub_option(lst, file_answer)
-    lst = filter_word_option(lst)
-    printing_results(lst)
-
-
-main()
+# def main() -> None:
+#     """Функция, которая отвечает за основную логику проекта
+#         и связывает функциональности между собой."""
+#     lst, file_answer = file_type_option()
+#     lst = status_type_option(lst)
+#     lst = sort_by_date_option(lst)
+#     lst = filter_rub_option(lst, file_answer)
+#     lst = filter_word_option(lst)
+#     printing_results(lst)
+#
+#
+# main()
